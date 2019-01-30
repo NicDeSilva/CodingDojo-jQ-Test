@@ -4,10 +4,10 @@ $(document).ready(function(){
         $((".add-class p") ).addClass( "red" );
     });
 
-  $( "button" ).click(function() {
-    $( "img" ).slideToggle( "slow",function()
+  $( ".toggle-img button" ).click(function() {
+    $( ".toggle-img  img" ).slideToggle( "slow",function()
     {
-      $("img").show();
+      $(".toggle-img  img").show();
     });
     console.log("slide;")
   });
