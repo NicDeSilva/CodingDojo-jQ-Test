@@ -5,7 +5,10 @@ $( "button" ).click(function() {
   });
 
   $( "button" ).click(function() {
-    $( this ).slideToggle();
+    $( "img" ).slideToggle( "slow",function()
+    {
+      $("img").show();
+    });
     console.log("slide;")
   });
 });
