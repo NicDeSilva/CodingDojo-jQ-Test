@@ -11,4 +11,8 @@ $(document).ready(function(){
     });
     console.log("slide;")
   });
+
+  $(".append-p button").click(function(){
+  $( "#first" ).append( "<p>More text appended!</p>" );
+  });
 });
