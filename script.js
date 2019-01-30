@@ -13,6 +13,6 @@ $(document).ready(function(){
   });
 
   $(".append-p button").click(function(){
-  $( "#first" ).append( "<p>More text appended!</p>" );
+  $( "#first" ).append( "<p>More text appended!</p>");
   });
 });
