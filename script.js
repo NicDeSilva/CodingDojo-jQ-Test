@@ -5,15 +5,11 @@ $(document).ready(function(){
     });
 
   $( ".toggle-img button" ).click(function() {
-    $( ".toggle-img  img" ).slideToggle( "slow",function()
-    {
-        $(".toggle-img  img").show();
-    });
-    console.log("slide;")
+    $( ".toggle-img  img" ).slideToggle( "slow")
   });
 
   $(".append-p button").click(function(){
-  $( "#first" ).append( "<p>More text appended!</p>" );
+    $( "#first" ).append( "<p>More text appended!</p>");
   });
 
 
@@ -25,7 +21,30 @@ $(document).ready(function(){
   $( ".fadeOut-img button" ).click(function() {
     $( ".fadeOut-img img" ).fadeOut( "slow", function() {
     });
-  });  
+  }); 
+  
+  var isShowed = false;
+  $(".fadeIn-img button").click(function(){
+
+    if(!isShowed)
+      $(".fadeIn-img img").fadeIn("slow");
+    else
+      $(".fadeIn-img img").fadeOut("slow");
+
+    isShowed = !isShowed;
+  });
+
+  $(".slideUp-p button").click(function(){
+    
+    if ( $(".slideUp-p p").is(":hidden"))
+      $(".slideUp-p p").show("slow");
+    else
+      $(".slideUp-p p").slideUp();
+
+    $(".slideUp-p p").css("background-color", "red");
+    $(".slideUp-p p").append(" HELLO!");
+    $(".slideUp-p p").add("div");
+  });
 
 var show = false;
   $( ".showhide-img button" ).click(function() {
