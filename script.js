@@ -7,7 +7,7 @@ $(document).ready(function(){
   $( ".toggle-img button" ).click(function() {
     $( ".toggle-img  img" ).slideToggle( "slow",function()
     {
-      $(".toggle-img  img").show();
+        $(".toggle-img  img").show();
     });
     console.log("slide;")
   });
@@ -15,4 +15,17 @@ $(document).ready(function(){
   $(".append-p button").click(function(){
   $( "#first" ).append( "<p>More text appended!</p>");
   });
+
+
+  $( ".slideDown-img button" ).click(function() {
+    $( ".slideDown-img img" ).slideDown( "slow", function() {
+    });
+  });
+
+  $( ".fadeOut-img button" ).click(function() {
+    $( ".fadeOut-img img" ).fadeOut( "slow", function() {
+    });
+  });  
+
+  //slideDown fadeOut
 });
