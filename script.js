@@ -1,8 +1,8 @@
 
 $(document).ready(function(){
-// $( "button" ).click(function() {
-//     $(("div").children("p") ).addClass( "red" );
-//   });
+$( "button" ).click(function() {
+    $(("div").children("p") ).addClass( "red" );
+  });
 
   $( "button" ).click(function() {
     $( this ).slideToggle();
