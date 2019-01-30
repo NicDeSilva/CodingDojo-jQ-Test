@@ -27,5 +27,19 @@ $(document).ready(function(){
     });
   });  
 
-  //slideDown fadeOut
+var show = false;
+  $( ".showhide-img button" ).click(function() {
+    if (show) { 
+        $(".showhide-img img").show(); }    
+    else{$(".showhide-img img").hide();}
+    show = !show;
+  }); 
+
+  $(".before-p button").click(function(){
+    $(".before-p p").before("New text added before!");
+  });
+
+  $(".html-div button").click(function(){
+    $(".html-div p").html("<h3>I overwrote the paragraph element!</h3>");
+  });
 });
